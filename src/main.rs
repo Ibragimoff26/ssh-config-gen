@@ -6,7 +6,7 @@ use handlebars::Handlebars;
 use serde_json::json;
 
 fn create_command() -> Command {
-    Command::new("ssh-config-add")
+    Command::new("ssh-config-gen")
         .about("Generate SSH configuration")
         .arg(Arg::new("port").short('p').help("SSH port"))
         .arg(
