@@ -1,0 +1,6 @@
+Host {{#each host}}{{this}}{{#unless @last}} {{/unless}}{{/each}}{{#if hostname}}
+    HostName {{hostname}}{{/if}}{{#if user}}
+    User {{user}}{{/if}}{{#if port}}
+    Port {{port}}{{/if}}{{#if identity_file}}
+    IdentityFile {{identity_file}}{{/if}}{{#if compression}}
+    Compression yes{{/if}}
